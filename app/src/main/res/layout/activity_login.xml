@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ActivityMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textForgotPassword"
+        android:layout_width="266dp"
+        android:layout_height="94dp"
+        android:onClick="onForgotPasssword"
+        android:text="@string/lupa_password_hubungi_call_center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.613"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:onClick="onButtonLoginClicked"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="@+id/text_layout_password"
+        app:layout_constraintStart_toStartOf="@+id/text_layout_password"
+        app:layout_constraintTop_toBottomOf="@+id/text_layout_password" />
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="177dp"
+        android:layout_height="184dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/smkn5"
+        android:contentDescription="@string/logo_smk"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        android:id="@+id/text_layout_username"
+        android:layout_width="299dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="64dp"
+        android:hint="username"
+        app:startIconDrawable="@drawable/ic_username"
+        app:endIconMode="clear_text"
+        app:boxCornerRadiusTopStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/image_logo"
+        app:layout_constraintStart_toStartOf="@+id/image_logo"
+        app:layout_constraintTop_toBottomOf="@+id/image_logo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_logo" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        android:id="@+id/text_layout_password"
+        android:layout_width="299dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="64dp"
+        android:hint="password"
+        app:startIconDrawable="@drawable/ic_lock"
+        app:endIconMode="password_toggle"
+        app:boxCornerRadiusTopStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/text_layout_username"
+        app:layout_constraintStart_toStartOf="@+id/text_layout_username"
+        app:layout_constraintTop_toBottomOf="@+id/text_layout_username">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

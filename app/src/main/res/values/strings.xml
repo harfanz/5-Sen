@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">5 Sen</string>
+    <string name="logo_smk">logo smk</string>
+    <string name="username">        Username</string>
+    <string name="password">        Password</string>
+    <string name="login">Login</string>
+    <string name="lupa_password_hubungi_call_center">Lupa Password? Hubungi Call Center</string>
+    <string name="hello_username">Hello Username</string>
 </resources>
